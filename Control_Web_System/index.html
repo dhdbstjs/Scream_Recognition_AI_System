@@ -1,0 +1,23 @@
+<!--CORS 허용 설정-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+<!-- API 경로 cors 허용 -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' 'unsafe-inline' https://dapi.kakao.com http://*.daumcdn.net http://www.utic.go.kr;
+    script-src 'self' 'unsafe-inline' https://dapi.kakao.com http://*.daumcdn.net;
+    img-src 'self' http://*; 'unsafe-inline' https://dapi.kakao.com http://*.daumcdn.net;
+    media-src 'self' http://*; 'unsafe-inline' https://dapi.kakao.com http://*.daumcdn.net http://www.utic.go.kr;
+    connect-src 'self' https://api.openweathermap.org https://cors-anywhere.herokuapp.com http://www.utic.go.kr/view/map/openDataCctvStream.jsp/*; 
+">
+  
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=ffac9283b27e961ec1731b8e13ea1a39"></script>
